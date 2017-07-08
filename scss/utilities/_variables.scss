@@ -1,0 +1,27 @@
+// the variables
+
+//colors
+$white: #fff;
+$color-primary: #D13CDC; //purple
+$color-primary-light: lighten($color-primary, 15%);
+$color-secondary: #36C1B6; //minty
+$color-text: #0D6EAA; //blue
+$color-shadow: #D7DADA; //gray
+$color-bg: #EFF5F7; //light blue
+$color-bg-dark: darken($color-bg, 12%);
+
+//fonts
+$font-stack-primary: 'Roboto', sans-serif;
+$font-stack-secondary: 'Open Sans', sans-serif;
+$font-stack-tertiary: 'Pacifico', cursive;
+
+//layout
+$max-width: 1000px;
+$gutter: 10px;
+
+// breakpoints
+$breakpoints: (
+  'sm': 576px,
+ 'med': 768px,
+  'lg': 992px,
+);

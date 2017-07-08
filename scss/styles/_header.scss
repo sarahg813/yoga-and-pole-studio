@@ -1,0 +1,42 @@
+.name {
+  font-size: 2.5em;
+  margin: 0;
+  color: $color-primary;
+  font-family: $font-stack-tertiary;
+  text-shadow: 2px 2px $color-shadow;
+}
+
+.main-nav {
+  margin-top: 5px;
+  @include mq('med') {
+    @include flexy;
+  }
+}
+
+.main-header{
+  padding-top: .5em;
+  padding-bottom: .5em;
+  a{
+    text-align: center;
+    display: block;
+    padding: 5px 15px;
+  }
+  @include mq('med') {
+    @include wid-med($wid: 90%, $marg: 0 auto);
+    @include flexy($dir: column);
+    align-items: center;
+  }
+  @include mq('lg') {
+    @include flexy($dir: row, $just: space-between);
+    @include wid-med($wid: 80%, $max-wid: 1150px);
+  }
+}
+
+.main-nav a {
+  font-size: 1em;
+  color: $color-secondary;
+  font-family: $font-stack-secondary;
+  &:hover {
+    color: $color-text;
+  }
+}

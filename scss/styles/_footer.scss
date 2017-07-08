@@ -1,0 +1,27 @@
+.main-footer {
+	background: $color-bg-dark;
+  padding: 1.25em 0 1.25em 0;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  text-align: center;
+  a {
+    color: $color-primary-light;
+    &:hover {
+      color: $color-secondary;
+    }
+  }
+	@include mq('med') {
+		@include flexy;
+	  @include wid-med($wid: 90%, $marg: 0 auto);
+	  .col {
+	  	@include flexy($dir: column);
+	    flex: 1;
+	  }
+		.tertiary {
+			align-self: center;
+		}
+	}
+	  @include mq('lg') {
+	  	@include wid-med($wid: 80%, $max-wid: 1150px);
+	  }
+	}

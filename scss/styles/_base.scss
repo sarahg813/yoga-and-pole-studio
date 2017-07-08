@@ -1,0 +1,25 @@
+body {
+	font-family: $font-stack-primary;
+	line-height: 1.5;
+	color: $color-text;
+	margin: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+p {
+	font-size: .95em;
+	margin: 0 0 1em 0;
+}
+
+h2 {
+  color: $color-primary-light;
+  font-family: $font-stack-secondary;
+  font-weight: bolder;
+}
+a {
+	text-decoration: none;
+}
